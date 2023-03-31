@@ -67,8 +67,10 @@ Git should be installed on your local machine to clone it using HTTP or SSH. Oth
 
 You can clone this project by using the command below
 
-Command : git clone https://github.com/shafiuyushawu/bookstore.git
-
+Command : 
+```bash
+git clone https://github.com/shafiuyushawu/bookstore.git
+```
 ### Run project <a name="run-tests"></a>
 
 In the project directory, you can run:
@@ -131,7 +133,7 @@ If you like this project please give me a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the project snapshot from https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378.
+[I would like to thank Microverse for the project snapshot from]( https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378.)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

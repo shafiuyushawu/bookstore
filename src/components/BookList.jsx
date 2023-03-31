@@ -23,12 +23,12 @@ const BookList = () => (
         <li>
           <ul>
             <li className="text-5xl">70%</li>
-            <li className=" text-[#979797]">Completed</li>
+            <li className="text-[#979797]">Completed</li>
           </ul>
         </li>
       </ul>
       <ul className=" flex flex-col gap-5">
-        <li>Current Chapter</li>
+        <li className="text-[#979797]">Current Chapter</li>
         <li>Chapter 17</li>
         <li>
           {' '}

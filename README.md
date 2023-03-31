@@ -23,7 +23,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-### BookStore
+# [BookStore]
 
 A react web application which functionalties to enable user add a books with name and title. 
 
@@ -133,7 +133,7 @@ If you like this project please give me a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-[I would like to thank Microverse for the project snapshot from]( https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378.)
+I would like to thank Microverse for the project snapshot from [Zeplin]( https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378.)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

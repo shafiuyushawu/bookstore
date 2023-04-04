@@ -1,5 +1,3 @@
-import React from 'react';
-
 const BookForm = () => (
   <div className="px-10 mx-24 shadow-xl card card-side bg-base-100">
     <div className="card-body">
@@ -9,13 +7,15 @@ const BookForm = () => (
           type="text"
           placeholder="BOOK TITLE"
           className="w-full max-w-5xl input input-bordered "
+          name="title"
         />
         <input
           type="text"
           placeholder="AUTHOR"
           className="w-full max-w-2xl input input-bordered "
+          name="author"
         />
-        <button type="button" className="btn btn-primary btn-wide">
+        <button type="submit" className="btn btn-primary btn-wide">
           ADD A BOOK
         </button>
       </form>

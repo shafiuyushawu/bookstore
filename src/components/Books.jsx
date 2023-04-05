@@ -1,11 +1,15 @@
+import { useSelector } from 'react-redux';
 import BookList from './BookList';
-import BookForm from './BookForm';
 
-const Bookstore = () => (
-  <div>
-    <BookList />
-    <BookForm />
-  </div>
-);
+const Books = () => {
+  const books = useSelector((state) => state.book.books);
+  return (
+    <div>
+      {books.map((book) => (
+        <BookList key={book.itemId} book={book} />
+      ))}
+    </div>
+  );
+};
 
-export default Bookstore;
+export default Books;

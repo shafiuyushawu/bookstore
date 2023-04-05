@@ -1,25 +1,29 @@
-const BookList = () => (
+import PropTypes from 'prop-types';
+
+const BookList = ({ book }) => (
   <div className="px-10 mx-24 card card-side bg-base-100">
     <div className="grid grid-cols-3 card-body">
       <ul>
-        <li className="text-sm font-extrabold text-[#8c8c8c]">Action</li>
-        <li className="text-2xl font">Grief Child</li>
-        <li className="text-sm">Shafiu Yushawu</li>
+        <li className="text-sm font-extrabold text-[#8c8c8c]">
+          {book.category}
+        </li>
+        <li className="text-2xl font">{book.title}</li>
+        <li className="text-sm">{book.author}</li>
         <li>
           <ul className="flex gap-2">
             <li>
-              <button type="button" className="btn btn-sm">
+              <button type="button" className="btn btn-sm btn-primary">
                 Comments
               </button>
             </li>
             <li>
-              <button type="button" className="btn btn-sm">
+              <button type="button" className="btn btn-sm btn-secondary">
                 Remove
               </button>
             </li>
             <li>
-              <button type="button" className="btn btn-sm">
-                Remove
+              <button type="button" className="btn btn-sm btn-info">
+                Edit
               </button>
             </li>
           </ul>
@@ -52,5 +56,13 @@ const BookList = () => (
     </div>
   </div>
 );
+
+BookList.propTypes = {
+  book: PropTypes.shape({
+    title: PropTypes.string,
+    author: PropTypes.string,
+    category: PropTypes.string,
+  }).isRequired,
+};
 
 export default BookList;

@@ -12,9 +12,11 @@ const BookForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const itemId = uuidv4();
-    dispatch(addBook({ itemId, title, author }));
-    setTitle('');
-    setAuthor('');
+    if (title !== '' && author !== '') {
+      dispatch(addBook({ itemId, title, author }));
+      setTitle('');
+      setAuthor('');
+    }
   };
 
   return (

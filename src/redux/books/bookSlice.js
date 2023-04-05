@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import produce from 'immer';
 
 const initialState = {
   books: [
@@ -28,11 +27,12 @@ const bookSlice = createSlice({
   name: 'book',
   initialState,
   reducers: {
-    addBook: (state, { payload: { itemId, title, author } }) => produce(state, (draftState) => {
-      draftState.books.push({ itemId, title, author });
-    }),
-    removeBook: (state, { payload: { itemId } }) => produce(state, (draftState) => {
-      draftState.books = draftState.books.filter((book) => book.itemId !== itemId);
+    addBook: (state, { payload: { itemId, title, author } }) => {
+      state.books.push({ itemId, title, author });
+    },
+    removeBook: (state, { payload: { itemId } }) => ({
+      ...state,
+      books: state.books.filter((book) => book.itemId !== itemId),
     }),
   },
 });

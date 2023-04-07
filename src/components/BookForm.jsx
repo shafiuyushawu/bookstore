@@ -26,14 +26,16 @@ const BookForm = () => {
   };
 
   return (
-    <div className="px-10 mx-24 shadow-xl card card-side bg-base-100">
-      <div className="card-body">
-        <h2 className="card-title">ADD A BOOK</h2>
-        <form onSubmit={handleSubmit} className="grid grid-cols-3 gap-10">
+    <div className=" card card-side bg-[#fafafa]  rounded-none mt-7">
+      <div className=" border-t-2 border-[#e8e8e8]">
+        <h2 className="text-[#888888] h-[1.5rem] w-[10.875rem] mb-[1.188rem] mt-5 w-[10.875rem] h-[1.5rem] font-['Montserrat'] text-[1.25rem] font-bold leading-normal tracking-[-0.18px] ">
+          ADD A BOOK
+        </h2>
+        <form onSubmit={handleSubmit} className="mt-5">
           <input
             type="text"
             placeholder="BOOK TITLE"
-            className="w-full max-w-6xl input input-bordered "
+            className="w-[45.5rem] h-[2.813rem] py-[0.675rem] px-[0.938rem]  mr-[2.135rem]  border-2 border-[#e8e8e8] placeholder:text-[#e8e8e8] "
             name="title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -41,12 +43,15 @@ const BookForm = () => {
           <input
             type="text"
             placeholder="AUTHOR"
-            className="w-full input input-bordered "
+            className="h-[2.812rem] w-[21rem] py-[0.675rem] px-[0.938rem] mr-[2.135rem] border-2 border-[#e8e8e8] placeholder:text-[#e8e8e8]"
             name="author"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
           />
-          <button type="submit" className="btn btn-primary btn-wide">
+          <button
+            type="submit"
+            className="bg-[#0290ff] w-[15rem] h-[2.813rem] items-center  text-center text-white font-normal font-bold text-[0.813rem] leading-normal tracking-[0.5px] "
+          >
             ADD A BOOK
           </button>
         </form>

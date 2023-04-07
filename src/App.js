@@ -7,7 +7,7 @@ function App() {
   return (
     <Routers>
       <Navbar />
-      <main className="pb-48">
+      <main className="bg-[#fafafa] pb-48">
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/category" element={<Categories />} />

@@ -23,7 +23,7 @@ function Book() {
     return <div>{error}</div>;
   }
   return (
-    <div>
+    <div className="bg-[#fafafa] ">
       {books.map((book) => (
         <BookList key={book.id} book={book} />
       ))}

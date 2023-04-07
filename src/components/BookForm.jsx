@@ -13,9 +13,13 @@ const BookForm = () => {
     e.preventDefault();
     const itemId = uuidv4();
     if (title !== '' && author !== '') {
-      dispatch(addBook({
-        item_id: itemId, title, author, category: '',
-      }));
+      const newBook = {
+        item_id: itemId,
+        title,
+        author,
+        category: '',
+      };
+      dispatch(addBook(newBook));
       setTitle('');
       setAuthor('');
     }

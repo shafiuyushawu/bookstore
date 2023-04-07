@@ -144,3 +144,17 @@ I would like to thank Microverse for the project snapshot from [Zeplin]( https:/
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+     {Object.values(books).map((bookArray) => {
+        const { author, title, category } = bookArray[0];
+        console.log(bookArray.id);
+        return (
+          <>
+            <BookList
+              key={bookArray[0].item_id}
+              author={author}
+              title={title}
+              category={category}
+            />
+          </>
+        );
+      })}

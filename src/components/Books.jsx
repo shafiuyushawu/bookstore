@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllBooks } from '../redux/books/bookSlice';
 import BookList from './BookList';
+import Loading from './Loading';
 
 function Book() {
   const dispatch = useDispatch();
@@ -11,7 +12,12 @@ function Book() {
     dispatch(getAllBooks());
   }, [dispatch]);
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex items-center justify-center py-32">
+        <Loading />
+        ;
+      </div>
+    );
   }
   if (error) {
     return <div>{error}</div>;

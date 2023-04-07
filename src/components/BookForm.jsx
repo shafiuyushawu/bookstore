@@ -33,7 +33,7 @@ const BookForm = () => {
           <input
             type="text"
             placeholder="BOOK TITLE"
-            className="w-full max-w-5xl input input-bordered "
+            className="w-full max-w-6xl input input-bordered "
             name="title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -41,7 +41,7 @@ const BookForm = () => {
           <input
             type="text"
             placeholder="AUTHOR"
-            className="w-full max-w-2xl input input-bordered "
+            className="w-full input input-bordered "
             name="author"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}

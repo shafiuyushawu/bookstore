@@ -7,10 +7,12 @@ function App() {
   return (
     <Routers>
       <Navbar />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/category" element={<Categories />} />
-      </Routes>
+      <main className="bg-[#fafafa] pb-48">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/category" element={<Categories />} />
+        </Routes>
+      </main>
     </Routers>
   );
 }

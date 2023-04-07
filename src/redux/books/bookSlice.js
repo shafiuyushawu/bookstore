@@ -79,7 +79,6 @@ const bookSlice = createSlice({
           const itemCopy = { ...item };
           itemCopy.id = key;
           return itemCopy;
-          // flatten the resulting array of arrays into a single array.
         })).flat(),
       }))
       .addCase(getAllBooks.rejected, (state, action) => ({

@@ -1,8 +1,10 @@
-import Bookstore from '../components/Books';
+import BookForm from '../components/BookForm';
+import Books from '../components/Books';
 
 const Home = () => (
-  <div>
-    <Bookstore />
+  <div className="bg-[#fafafa] mx-[6.25rem]  ">
+    <Books />
+    <BookForm />
   </div>
 );
 
